@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Left: Logo + Swiggy -->
+            <div class="flex items-center space-x-6">
+                <a href="#" class="flex items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy Logo" class="h-10">
+                </a>
+                <a href="./Swiggy.html" class="font-semibold text-gray-900">Swiggy</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="flex space-x-8 text-gray-700">
+                <a href="#" class="flex items-center space-x-1 hover:text-orange-500 font-medium">
+                    <i class="ph ph-magnifying-glass text-lg"></i> <span>Search</span>
+                </a>
+                <a href="./offer.html" class="flex items-center space-x-1 hover:text-orange-500 font-medium relative">
+                    <i class="ph ph-percent text-lg"></i> <span>Offers <span class="text-orange-500 text-xs font-bold absolute top-0">NEW</span></span>
+                </a>
+                <a href="./Help.html" class="flex items-center space-x-1 hover:text-orange-500 font-medium">
+                    <i class="ph ph-life-buoy text-lg"></i> <span>Help</span>
+                </a>
+                <a href="./signin.html" class="flex items-center space-x-1 hover:text-orange-500 font-medium">
+                    <i class="ph ph-user text-lg"></i> <span>Sign In</span>
+                </a>
+                <a href="./cart.html" class="flex items-center space-x-1 hover:text-orange-500 font-medium relative">
+                    <i class="ph ph-shopping-cart text-lg"></i> <span>Cart</span>
+                    <span class="absolute -top-2 -right-3 bg-gray-800 text-white text-xs px-2 py-0.5 rounded-full">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- What's on your mind section -->
+    <section class="mt-20 px-6">
+        <h2 class="text-xl font-semibold mb-4">What's on your mind?</h2>
+        <div class="flex space-x-6 overflow-x-auto">
+            <div class="flex flex-col items-center">
+                <img src="./dosa.jpeg" alt="Dosa" class="h-20 w-20 rounded-full">
+                <span class="mt-2 text-gray-700">Dosa</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./idli.jpeg" alt="Idli" class="h-20 w-20 rounded-full">
+                <span class="mt-2 text-gray-700">Idli</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./uttapam.jpeg" alt="Uttappam" class="h-20 w-20 rounded-full">
+                <span class="mt-2 text-gray-700">Uttappam</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./coffee.jpeg" alt="Coffee" class="h-20 w-20 rounded-full">
+                <span class="mt-2 text-gray-700">Coffee</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./pure veg.jpeg" alt="Pure Veg" class="h-20 w-20 rounded-full">
+                <span class="mt-2 text-gray-700">Pure Veg</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./tea.jpeg" alt="Tea" class="h-20 w-20 rounded-full">
+                <span class="mt-2 text-gray-700">Tea</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="./samosa.jpeg" alt="Samosa" class="h-20 w-20 rounded-full">
+                <span class="mt-2 text-gray-700">Samosa</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best place to eat in Access City section -->
+    <section class="mt-10 px-6">
+        <h2 class="text-xl font-semibold mb-4">Best place to eat in Access City</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="./R1.jpeg" alt="Karavalli" class="h-40 w-full object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Karavalli</h3>
+                    <p class="text-gray-700 mt-2">Famous for its authentic coastal cuisine, serving traditional recipes from India's southwestern coast.</p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="./r2.jpeg" alt="Shiro" class="h-40 w-full object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Shiro</h3>
+                    <p class="text-gray-700 mt-2"> An upscale Pan-Asian restaurant in UB City, known for its sushi and Japanese delicacies.</p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="./r3.jpeg" alt="Koramangala Social" class="h-40 w-full object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Koramangala Social</h3>
+                    <p class="text-gray-700 mt-2">A trendy spot combining a workspace during the day and a lively bar at night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best restaurants with good rating section -->
+    <section class="mt-10 px-6"></section>
+        <h2 class="text-xl font-semibold mb-4">Best Restaurants with Good Rating</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="./R4.jpeg" alt="Koshy’s Parade Café" class="h-40 w-full object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Koshy’s Parade Café</h3>
+                    <p class="text-gray-700 mt-2">A Bengaluru institution since 1940, offering a mix of Indian and continental dishes.</p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="./R5.jpeg" alt="Nagarjuna" class="h-40 w-full object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">Nagarjuna</h3>
+                    <p class="text-gray-700 mt-2">Renowned for its Andhra-style cuisine, especially flavorful biryanis and spicy curries.</p>
+                </div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <img src="./R6.jpg" alt="ShakesBierre" class="h-40 w-full object-cover rounded-t-lg">
+                <div class="mt-4">
+                    <h3 class="text-lg font-semibold">ShakesBierre</h3>
+                    <p class="text-gray-700 mt-2">A Shakespeare-themed microbrewery offering craft beers and a diverse food menu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md mt-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <p class="text-gray-700">&copy; 2025 Swiggy. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-700 hover:text-orange-500">Privacy Policy</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500">Terms of Service</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

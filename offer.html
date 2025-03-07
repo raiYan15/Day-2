@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Offers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy Logo" class="h-8">
+            <span class="text-lg font-semibold">Swiggy</span>
+        </div>
+        <div class="flex-1 max-w-md">
+            <input type="text" placeholder="Search for restaurant and food" class="w-full px-4 py-2 border rounded-lg focus:outline-none">
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="text-gray-600">🔍</button>
+            <button class="text-gray-600">👤</button>
+        </div>
+    </header>
+    
+    <!-- Offers Section -->
+    <section class="p-6">
+        <div class="text-sm text-gray-500">Home / <span class="font-semibold">Offers</span></div>
+        <div class="relative mt-4">
+            <img src="./offers.jpg" alt="Food Offer" class="w-full h-60 object-cover rounded-lg">
+            <div class="absolute top-10 left-10 text-white text-2xl font-bold">Great Food Offers Near You - Order Online Now!</div>
+        </div>
+    </section>
+    
+    <!-- Restaurants Section -->
+    <section class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <script>
+            const restaurants = [
+                {name: "Spicy Bites", rating: "4.5", time: "30-40 mins", price: "₹200", offer: "50% OFF | Use Code: SWIGGY50", img: "./Restaurants/spicybites.jpg"},
+                {name: "Tandoori Nights", rating: "4.2", time: "25-35 mins", price: "₹250", offer: "40% OFF | Use Code: SWIGGY40", img: "./Restaurants/tandoori-nights.jpg"},
+                {name: "Flavors of India", rating: "4.6", time: "20-30 mins", price: "₹300", offer: "30% OFF | Use Code: FLAVOR30", img: "./Restaurants/r3.jpeg"},
+                {name: "Grill House", rating: "4.3", time: "35-45 mins", price: "₹350", offer: "20% OFF | Use Code: GRILL20", img: "./Restaurants/grill-house-armenia-unique.jpg"},
+                {name: "Biryani Bliss", rating: "4.7", time: "25-35 mins", price: "₹280", offer: "60% OFF | Use Code: BIRYANI60", img: "./Restaurants/r5.jpeg"},
+                {name: "Sizzling Tandoor", rating: "4.4", time: "30-40 mins", price: "₹320", offer: "50% OFF | Use Code: TANDOOR50", img: "./Restaurants/r6.jpeg"},
+                {name: "Urban Dine", rating: "4.1", time: "40-50 mins", price: "₹400", offer: "25% OFF | Use Code: URBAN25", img: "./Restaurants/r7.jpeg"},
+                {name: "Chowmein Corner", rating: "4.5", time: "20-30 mins", price: "₹150", offer: "45% OFF | Use Code: CHOW45", img: "./Restaurants/r8.avif"},
+                {name: "Pizza Palace", rating: "4.3", time: "25-35 mins", price: "₹350", offer: "35% OFF | Use Code: PIZZA35", img: "./Restaurants/r9.jpeg"},
+                {name: "Dessert Delight", rating: "4.8", time: "15-25 mins", price: "₹180", offer: "30% OFF | Use Code: SWEET30", img: "./Restaurants/r10.jpeg"},
+            ];
+            
+            document.write(
+                restaurants.map(r => `
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="${r.img}" alt="${r.name}" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">${r.name}</h3>
+                        <p class="text-gray-600">⭐ ${r.rating} | ${r.time} | ${r.price} for two</p>
+                        <p class="text-orange-500 font-bold">${r.offer}</p>
+                    </div>
+                </div>
+                `).join('')
+            );
+        </script>
+    </section>
+    
+    <!-- Filters Section -->
+    <section class="p-6">
+        <div class="flex space-x-2 overflow-x-auto">
+            <button class="px-4 py-2 bg-gray-200 rounded-full text-sm" onclick="toggleActive(this)">Filter</button>
+            <button class="px-4 py-2 bg-gray-200 rounded-full text-sm" onclick="toggleActive(this)">Sort By</button>
+            <button class="px-4 py-2 bg-orange-500 text-white rounded-full text-sm" onclick="toggleActive(this)">Offers</button>
+            <button class="px-4 py-2 bg-gray-200 rounded-full text-sm" onclick="toggleActive(this)">Fast Delivery</button>
+            <button class="px-4 py-2 bg-gray-200 rounded-full text-sm" onclick="toggleActive(this)">Ratings 4.0+</button>
+            <button class="px-4 py-2 bg-gray-200 rounded-full text-sm" onclick="toggleActive(this)">Pure Veg</button>
+            <button class="px-4 py-2 bg-gray-200 rounded-full text-sm" onclick="toggleActive(this)">Rs. 300-600</button>
+            <button class="px-4 py-2 bg-gray-200 rounded-full text-sm" onclick="toggleActive(this)">Less than Rs. 300</button>
+        </div>
+    </section>
+    
+    <script>
+        function toggleActive(button) {
+            const isActive = button.classList.contains('bg-orange-500');
+            document.querySelectorAll('button').forEach(btn => btn.classList.remove('bg-orange-500', 'text-white'));
+            if (!isActive) {
+                button.classList.add('bg-orange-500', 'text-white');
+            } else {
+                button.classList.add('bg-gray-200');
+            }
+        }
+    </script>
+</body>
+</html>

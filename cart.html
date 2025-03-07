@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script> <!-- Icons -->
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Left: Logo + Swiggy -->
+            <div class="flex items-center space-x-6">
+                <!-- Swiggy Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" 
+                        alt="Swiggy Logo" class="h-10">
+                </a>
+                <a href="./Swiggy.html"></a>
+                <!-- Swiggy Text -->
+                <div class="font-semibold text-gray-900">
+                    Swiggy
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="flex space-x-8 text-gray-700">
+                <a href="./" class="flex items-center space-x-1 hover:text-orange-500 font-medium">
+                    <i class="ph ph-magnifying-glass text-lg"></i> <span>Search</span>
+                </a>
+                <a href="./offer.html" class="flex items-center space-x-1 hover:text-orange-500 font-medium relative">
+                    <i class="ph ph-percent text-lg"></i> 
+                    <span>Offers <span class="text-orange-500 text-xs font-bold absolute top-0">NEW</span></span>
+                </a>
+                <a href="./Help.html" class="flex items-center space-x-1 hover:text-orange-500 font-medium">
+                    <i class="ph ph-life-buoy text-lg"></i> <span>Help</span>
+                </a>
+                <a href="./signin.html" class="flex items-center space-x-1 hover:text-orange-500 font-medium">
+                    <i class="ph ph-user text-lg"></i> <span>Sign In</span>
+                </a>
+                <a href="./cart.html" class="flex items-center space-x-1 hover:text-orange-500 font-medium relative">
+                    <i class="ph ph-shopping-cart text-lg"></i> <span>Cart</span>
+                    <span class="absolute -top-2 -right-3 bg-gray-800 text-white text-xs px-2 py-0.5 rounded-full">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
